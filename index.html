@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionário</title>
+    
+    <style>
+
+        .body {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .text1 {
+            width: 80%;
+            height: 200px;
+            background-color:aliceblue;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .botoes {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            
+        }
+
+        .botao1 {
+            margin-left: 15px;
+        }
+
+        .botao1:hover {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        Nome: <input type="text" class="caixa_larga" id="nome">
+        <br>
+        <br>
+        Endereço: <input type="text" class="caixa_larga" id="endereco">
+        <br>
+        <br>
+        Cidade: <input type="text" class="caixa_larga" id="cidade">
+        <br>
+        <br>
+        Estado: <select class="estado" id="estado">
+            <option>São Paulo</option>
+            <option selected>Santa Catarina</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Dados profissionais</legend>
+        Natureza do Cargo:
+        <br>
+        <input type="radio" class="cargos" id="gerencia" name="cargos"> Gerência
+        <input type="radio" class="cargos" id="financeiro" name="cargos"> Financeiro
+        <input type="radio" class="cargos" id="recepcao" name="cargos"> Recepção
+        <input type="radio" class="cargos" id="adm" name="cargos"> Administrativo
+        <input type="radio" class="cargos" id="jur" name="cargos"> Jurídico
+        <br>
+        <br>
+        Área de interesse:
+        <br>
+        <input type="checkbox" class="areas" id="comp" name="areas"> Computação
+        <input type="checkbox" class="areas" id="biologia" name="areas"> Biologia
+        <input type="checkbox" class="areas" id="meioambiente" name="areas"> Meio Ambiente
+        <input type="checkbox" class="areas" id="engenharia" name="areas"> Engenharia
+        <input type="checkbox" class="areas" id="historia" name="areas"> História
+        <br>
+        <br>
+        Mini-Currículo:
+        <br>
+        <textarea class="text1" id="curriculo"></textarea>
+        <br>
+        <br>
+        Data de envio: <input type="date" id="dataenvio">
+    </fieldset>
+    <br>
+    <div class="botoes">
+        <button class="botao1">ENVIAR</button>
+        <button class="botao1">LIMPAR</button>
+        <button class="botao1">VOLTAR</button>
+    </div> 
+</body>
+
+</html>
